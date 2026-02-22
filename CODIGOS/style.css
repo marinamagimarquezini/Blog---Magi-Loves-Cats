@@ -1,0 +1,339 @@
+/*        /\_/\       Opa!! Vejo que você está dando uma espiadinha por aqui, hehe..
+        = ( • . • ) =   Fique a vontade para pegar qualquer coisa.. mesmo que nem eu entenda
+          /      \      a bagunça que aqui fica..  CSS AJEITADO COM IA!!!
+                          *\
+
+
+/* ================= USER STYLES ================= */
+
+:root {
+    --header-image: url('#');
+    --body-bg-image: url('#');
+    --content: #ffffff;
+}
+
+/* ================= FONTS ================= */
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* ================= BODY ================= */
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    background-color: #5EA35A;
+    background-image: var(--body-bg-image);
+    background-size: 65px;
+    background-repeat: repeat;
+    color: #fceaff;
+    --main: black;
+    --back: #fcfbf4;
+    --mid: #dad2b4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ================= INTRO ANIMATION ================= */
+
+body:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 7;
+    background-image: url('https://magilovescats.neocities.org/Todas%20Fotos/load%20page.gif');
+    background-color: #101214;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: yourAnimation 0.9s ease 1s forwards;
+    pointer-events: none;
+}
+
+@keyframes yourAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* ================= LAYOUT ================= */
+
+#container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#container a {
+    color: #ffffff;
+    font-family: mod3, MS Gothic, Tahoma, sans-serif;
+
+}
+
+#header {
+    width: 100%;
+    height: 150px;
+    background-image: var(--header-image);
+    background-size: 100%;
+}
+
+#flex {
+    display: flex;
+}
+
+aside {
+    background-color: #3a3737;
+    width: 230px;
+    padding: 20px;
+    font-size: smaller;
+}
+
+main {
+    background-color: #3a3737;
+    flex: 1;
+    padding: 20px;
+    order: 2;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+/* ================= GALERIA ================= */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+.gallery a {
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery a:hover img {
+    transform: scale(1.2);
+}
+
+/* ================= SIDEBAR ORDER ================= */
+
+#leftSidebar {
+    order: 1;
+}
+
+#rightSidebar {
+    order: 3;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #3a3737;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ================= TEXT ================= */
+
+h1,
+h2,
+h3 {
+    color: #ff7b00;
+    font-family: mod3, MS Gothic, Tahoma, sans-serif;
+
+}
+
+h1, {
+    font-size: 25px;
+    font-family: mod3, MS Gothic, Tahoma, sans-serif;
+
+}
+
+p,
+a {
+    font-family: mod3, MS Gothic, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+strong {
+    font-family: mod3, MS Gothic, Tahoma, sans-serif;
+
+    color: #ED64F5;
+}
+
+/* ================= BOX ================= */
+
+.box {
+    background-color: #3a3737;
+    padding: 25px 35px;
+    border: 2px dashed #5ac535;
+    /* borda fina */
+}
+
+/* ================= TOP BAR ================= */
+
+#topBar {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    font-size: smaller;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media only screen and (max-width: 800px) {
+
+    #flex {
+        flex-wrap: wrap;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    main {
+        order: 1;
+    }
+
+    #leftSidebar {
+        order: 2;
+    }
+
+    #rightSidebar {
+        order: 3;
+    }
+
+    #navbar ul {
+        flex-wrap: wrap;
+    }
+}
+
+/* ================= MUSIC PLAYER GLENTHEMES ================= */
+#ongaku {
+    position: relative;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    z-index: 9999;
+    border: 4px double #33ff00;
+    /*Border Colour*/
+    background-color: #3a3737;
+    /*Music Tab Background Colour*/
+    border-radius: 50px;
+    opacity: .6;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+
+#gaku {
+    width: 24px;
+    height: 24px;
+    margin-top: 3px;
+    margin-left: 3px;
+    overflow: hidden;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+
+#kero {
+    height: 26px;
+}
+
+#kero img {
+    margin-right: 5px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+#kero embed {
+    margin-top: -5px;
+}
+
+#kero embed,
+#kero {
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+
+#ongaku:hover {
+
+    width: 80px;
+}
+
+#ongaku:hover #gaku {
+    width: 74px;
+}
+
+#ongaku:hover #kero {
+    margin-left: -50px;
+}
+
+.playy,
+.pausee {
+    margin-left: 7px;
+    margin-top: 4px;
+    position: relative;
+    left: 20px;
+    font-size: 15px;
+    color: #FFF;
+    /* play & pause buttons color */
+    cursor: pointer;
+    text-shadow: -1px 0 #2e2e2e, 0 1px #2e2e2e, 1px 0 #2e2e2e, 0 -1px #2e2e2e;
+
+}
+
+.pausee {
+    display: none;
+}
