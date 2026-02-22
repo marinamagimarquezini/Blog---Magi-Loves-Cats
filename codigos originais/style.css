@@ -99,8 +99,9 @@ body:before {
 }
 
 #container a {
-    color: #F28C00;
-    font-weight: bold;
+    color: #ffffff;
+    font-family: mod3, MS Gothic, Tahoma, sans-serif;
+
 }
 
 #header {
@@ -180,20 +181,26 @@ footer {
 h1,
 h2,
 h3 {
-    color: #ED64F5;
+    color: #ff7b00;
+        font-family: mod3, MS Gothic, Tahoma, sans-serif;
+
 }
 
 h1 {
     font-size: 25px;
+        font-family: mod3, MS Gothic, Tahoma, sans-serif;
+
 }
 
-a,
-p {
+p,
+summary {
     font-family: mod3, MS Gothic, Tahoma, sans-serif;
     font-size: 16px;
 }
 
 strong {
+        font-family: mod3, MS Gothic, Tahoma, sans-serif;
+
     color: #ED64F5;
 }
 
