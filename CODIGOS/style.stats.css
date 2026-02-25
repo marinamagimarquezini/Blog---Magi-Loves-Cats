@@ -1,0 +1,85 @@
+/*        /\_/\       Opa!! Vejo que vocÃª estÃ¡ dando uma espiadinha por aqui, hehe..
+        = ( â€¢ . â€¢ ) =   Fique a vontade para pegar qualquer coisa.. mesmo que nem eu entenda
+          /      \      a bagunÃ§a que aqui fica..  CSS AJEITADO COM IA!!!
+                          *\
+
+
+/* ================= USER STYLES ================= */
+
+:root {
+    --header-image: url('#');
+    --body-bg-image: url('#');
+    --content: #ffffff;
+}
+
+/* ================= FONTS ================= */
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* ================= BODY ================= */
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    background-color: #5EA35A;
+    background-image: var(--body-bg-image);
+    background-size: 65px;
+    background-repeat: repeat;
+    color: #fceaff;
+    --main: black;
+    --back: #fcfbf4;
+    --mid: #dad2b4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    color: #ff7b00;
+    font-family: mod3, MS Gothic, Tahoma, sans-serif;
+
+}
+
+h1,
+    {
+    font-size: 25px;
+    font-family: mod3, MS Gothic, Tahoma, sans-serif;
+
+}
+
+p,
+a {
+    font-family: mod3, MS Gothic, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+strong {
+    font-family: mod3, MS Gothic, Tahoma, sans-serif;
+
+    color: #ED64F5;
+}

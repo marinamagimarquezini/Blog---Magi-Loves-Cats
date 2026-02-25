@@ -43,3 +43,7 @@ $(document).ready(function () {
         $(".pausee").hide();
     };
 });
+
+/* ================= STATUS.CAFE ================= */
+
+
