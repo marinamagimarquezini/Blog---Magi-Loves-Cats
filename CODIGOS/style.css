@@ -129,6 +129,8 @@ main {
     order: 2;
     max-height: 600px;
     overflow-y: auto;
+    overflow-x: hidden;
+
 }
 
 /* ================= GALERIA ================= */
@@ -348,3 +350,55 @@ strong {
   color: #000;
   user-select: all; /* facilita copiar */
 }
+/* psp player by https://monsieurdoll.neocities.org/tutorials/pspvideoplayer */
+#psp {
+  width:720px;
+  margin-top: -100px;
+   position:relative;
+  }
+
+  .pspbutton {
+      background:none;
+      border:none;
+      position:absolute;
+     
+      }
+
+   #bright {
+   margin-left: -535px;
+    margin-top: 172px;
+     }
+     
+     #bleft{
+        margin-left: -609px;
+           margin-top: 170px;
+
+     }
+  .pspbutton:active {
+    filter: brightness(80%);
+    }    
+      
+      
+  .mySlides {
+  display: none;
+}    
+      
+  #pspstuff {     
+margin-top: -310px;
+  overflow: hidden;
+  margin-left: 130px;
+  }
+  
+  #pspstuff img {
+    width:400px;
+     height:230px;
+    }
+    
+   #pspstuff iframe {
+       height:5cm;
+      width:9cm;
+     }  
+     
+     .inte {
+        margin-top: 80px;
+     }
