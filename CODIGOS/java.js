@@ -43,3 +43,35 @@ $(document).ready(function () {
         $(".pausee").hide();
     };
 });
+
+ var sites = [
+                {
+                    url: "malune.net",
+                    image: "malune.gif",
+                },
+                {
+                    url: "phantasmagorya.neocities.org",
+                    image: "https://marinados.neocities.org/Todas%20Fotos/ads.gif"
+                },
+                {
+                    url: "sargx.net",
+                    image: "https://marinados.neocities.org/Todas%20Fotos/ads2.gif",
+                },
+                {
+                    url: "marinados.neocities.org",
+                    image: "https://marinados.neocities.org/marinados.gif",
+                },
+            ];
+
+            var body = document.body;
+            var link = document.getElementById("imglink");
+
+            function changeAd() {
+                var i = Math.floor(Math.random() * sites.length);
+                body.style.backgroundImage =
+                    "url('/navlink/assets/" + sites[i].image + "')";
+                link.href = "https://" + sites[i].url;
+            }
+
+            changeAd();
+            setInterval(changeAd, 10000);

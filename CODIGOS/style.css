@@ -162,10 +162,12 @@ main {
 
 #leftSidebar {
     order: 1;
+    
 }
 
 #rightSidebar {
     order: 3;
+
 }
 
 /* ================= FOOTER ================= */
@@ -239,6 +241,8 @@ strong {
 
     main {
         order: 1;
+            width: 100px;
+
     }
 
     #leftSidebar {
